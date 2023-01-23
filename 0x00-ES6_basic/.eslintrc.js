@@ -1,33 +1,35 @@
-export const env = {
-  browser: false,
-  es6: true,
-  jest: true,
-};
-export const extends = [
-  'airbnb-base',
-  'plugin:jest/all',
-];
-export const globals = {
-  Atomics: 'readonly',
-  SharedArrayBuffer: 'readonly',
-};
-export const parserOptions = {
-  ecmaVersion: 2018,
-  sourceType: 'module',
-};
-export const plugins = ['jest'];
-export const rules = {
-  'no-console': 'off',
-  'no-shadow': 'off',
-  'no-restricted-syntax': [
-    'error',
-    'LabeledStatement',
-    'WithStatement',
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
   ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
 };
-export const overrides = [
-  {
-    files: ['*.js'],
-    excludedFiles: 'babel.config.js',
-  }
-];

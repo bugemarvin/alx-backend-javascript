@@ -1,6 +1,7 @@
 #!/usr/bin/env python3 
 '''create a git commiter
 '''
+import os
 import sys
 import subprocess
 
@@ -11,8 +12,7 @@ subprocess.run(["git", "add", "."])
 
 '''For getting message from user
 '''
-
-subprocess.run(["git", "commit", "-m", input("Enter a Message to commit:\n")])
+subprocess.run(["git", "commit", "-m", input("Enter a commit message")])
 
 '''pushing to remote
 '''

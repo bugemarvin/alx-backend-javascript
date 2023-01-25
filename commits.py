@@ -12,7 +12,7 @@ subprocess.run(["git", "add", "."])
 
 '''For getting message from user
 '''
-subprocess.run(["git", "commit", "-m", input("Enter a commit message")])
+subprocess.run(["git", "commit", "-m", input("Enter a commit message\n")])
 
 '''pushing to remote
 '''

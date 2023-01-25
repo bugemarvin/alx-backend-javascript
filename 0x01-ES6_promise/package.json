@@ -1,7 +1,7 @@
 {
-  "name": "0x00-es6_basic",
+  "name": "0x01-es6_promise",
   "version": "1.0.0",
-  "description": "ES6 Basics",
+  "description": "Learning ES6 promises",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
@@ -10,17 +10,16 @@
     "test": "jest",
     "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
   },
+  "author": "Marvin Kurland",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.8.0",
     "@babel/preset-env": "^7.6.0",
-    "eslint": "^8.32.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
     "jest": "^24.9.0"
-  },
-  "dependencies": {
-    "npx": "^10.2.2"
   }
 }
